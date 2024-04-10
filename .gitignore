@@ -147,3 +147,8 @@ run/
 /runs/client/saves/New World/session.lock
 /runs/client/usercache.json
 /runs/client/usernamecache.json
+/runs/client/logs/2024-04-10-4.log.gz
+/runs/client/logs/debug-4.log.gz
+/runs/client/saves/New World/poi/r.0.0.mca
+/runs/client/saves/New World/poi/r.0.-1.mca
+/runs/client/saves/New World/poi/r.-1.-1.mca
