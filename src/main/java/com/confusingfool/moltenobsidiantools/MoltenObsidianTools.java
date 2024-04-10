@@ -1,5 +1,6 @@
 package com.confusingfool.moltenobsidiantools;
 
+import com.confusingfool.moltenobsidiantools.item.ModCreativeModeTab;
 import com.confusingfool.moltenobsidiantools.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -35,6 +36,8 @@ public class MoltenObsidianTools
 
         // Register ourselves for server and other game events we are interested in
         NeoForge.EVENT_BUS.register(this);
+        ModCreativeModeTab.register(modEventBus);
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +54,22 @@ public class MoltenObsidianTools
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
             event.accept(ModItems.MOLTEN_OBSIDIAN.get());
+            event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN.get());
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+        {
+            event.accept(ModItems.MOLTEN_OBSIDIAN_SHOVEL.get());
+            event.accept(ModItems.MOLTEN_OBSIDIAN_PICKAXE.get());
+            event.accept(ModItems.MOLTEN_OBSIDIAN_AXE.get());
+            event.accept(ModItems.MOLTEN_OBSIDIAN_HOE.get());
+            event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL.get());
+            event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE.get());
+            event.accept(ModItems.REINFORCED_OBSIDIAN_AXE.get());
+            event.accept(ModItems.REINFORCED_OBSIDIAN_HOE.get());
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
