@@ -19,11 +19,13 @@ public class ModCreativeModeTab
             .icon(() -> new ItemStack(ModItems.MOLTEN_OBSIDIAN.get()))
             .displayItems((params, output) -> {
                 output.accept(ModItems.MOLTEN_OBSIDIAN.get());
+                output.accept(ModItems.MOLTEN_UPGRADE_TEMPLATE.get());
                 output.accept(ModItems.MOLTEN_OBSIDIAN_SHOVEL.get());
                 output.accept(ModItems.MOLTEN_OBSIDIAN_PICKAXE.get());
                 output.accept(ModItems.MOLTEN_OBSIDIAN_AXE.get());
                 output.accept(ModItems.MOLTEN_OBSIDIAN_HOE.get());
                 output.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN.get());
+                output.accept(ModItems.REINFORCED_UPGRADE_TEMPLATE.get());
                 output.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL.get());
                 output.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE.get());
                 output.accept(ModItems.REINFORCED_OBSIDIAN_AXE.get());

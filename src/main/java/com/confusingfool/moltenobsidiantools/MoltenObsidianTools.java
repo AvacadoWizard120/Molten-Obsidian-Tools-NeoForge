@@ -57,6 +57,8 @@ public class MoltenObsidianTools
         {
             event.accept(ModItems.MOLTEN_OBSIDIAN.get());
             event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN.get());
+            event.accept(ModItems.MOLTEN_UPGRADE_TEMPLATE.get());
+            event.accept(ModItems.REINFORCED_UPGRADE_TEMPLATE.get());
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
