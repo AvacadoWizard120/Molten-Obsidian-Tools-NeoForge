@@ -1,0 +1,2 @@
+/enchant Dev minecraft:efficiency 4
+/gamemode survival
