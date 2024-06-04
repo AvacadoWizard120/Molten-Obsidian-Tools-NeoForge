@@ -53,33 +53,28 @@ public class ModItems
     );
 
     public static final Supplier<AxeItem> MOLTEN_OBSIDIAN_AXE = ITEMS.register(
-            "molten_obsidian_axe", () -> new AxeItem(ModTiers.MOLTEN, 10, -1f, new Item.Properties())
-    );
+            "molten_obsidian_axe", () -> new AxeItem(ModTiers.MOLTEN, (new Item.Properties()).attributes(AxeItem.createAttributes(ModTiers.MOLTEN, 10, -1f))));
 
     public static final Supplier<PickaxeItem> MOLTEN_OBSIDIAN_PICKAXE = ITEMS.register(
-            "molten_obsidian_pickaxe", () -> new PickaxeItem(ModTiers.MOLTEN, 4, -1f, new Item.Properties())
-    );
+            "molten_obsidian_pickaxe", () -> new PickaxeItem(ModTiers.MOLTEN, (new Item.Properties()).attributes(PickaxeItem.createAttributes(ModTiers.MOLTEN, 4, -1f))));
 
     public static final Supplier<ShovelItem> MOLTEN_OBSIDIAN_SHOVEL = ITEMS.register(
-            "molten_obsidian_shovel", () -> new ShovelItem(ModTiers.MOLTEN, 3, -1f, new Item.Properties())
-    );
+            "molten_obsidian_shovel", () -> new ShovelItem(ModTiers.MOLTEN,(new Item.Properties()).attributes(ShovelItem.createAttributes(ModTiers.MOLTEN, 3, -1f))));
+
     public static final Supplier<HoeItem> MOLTEN_OBSIDIAN_HOE = ITEMS.register(
-            "molten_obsidian_hoe", () -> new HoeItem(ModTiers.MOLTEN, 2, -1f, new Item.Properties())
-    );
+            "molten_obsidian_hoe", () -> new HoeItem(ModTiers.MOLTEN,(new Item.Properties()).attributes(HoeItem.createAttributes(ModTiers.MOLTEN, 2, -1f))));
+
     public static final Supplier<AxeItem> REINFORCED_OBSIDIAN_AXE = ITEMS.register(
-            "reinforced_obsidian_axe", () -> new AxeItem(ModTiers.MOLTEN, 10, -1f, new Item.Properties())
-    );
+            "reinforced_obsidian_axe", () -> new AxeItem(ModTiers.REINFORCED, (new Item.Properties()).attributes(AxeItem.createAttributes(ModTiers.REINFORCED, 10, -1f))));
 
     public static final Supplier<PickaxeItem> REINFORCED_OBSIDIAN_PICKAXE = ITEMS.register(
-            "reinforced_obsidian_pickaxe", () -> new PickaxeItem(ModTiers.MOLTEN, 4, -1f, new Item.Properties())
-    );
+            "reinforced_obsidian_pickaxe", () -> new PickaxeItem(ModTiers.REINFORCED, (new Item.Properties()).attributes(PickaxeItem.createAttributes(ModTiers.REINFORCED, 4, -1f))));
 
     public static final Supplier<ShovelItem> REINFORCED_OBSIDIAN_SHOVEL = ITEMS.register(
-            "reinforced_obsidian_shovel", () -> new ShovelItem(ModTiers.MOLTEN, 3, -1f, new Item.Properties())
-    );
+            "reinforced_obsidian_shovel", () -> new ShovelItem(ModTiers.REINFORCED,(new Item.Properties()).attributes(ShovelItem.createAttributes(ModTiers.REINFORCED, 3, -1f))));
+
     public static final Supplier<HoeItem> REINFORCED_OBSIDIAN_HOE = ITEMS.register(
-            "reinforced_obsidian_hoe", () -> new HoeItem(ModTiers.MOLTEN, 2, -1f, new Item.Properties())
-    );
+            "reinforced_obsidian_hoe", () -> new HoeItem(ModTiers.REINFORCED,(new Item.Properties()).attributes(HoeItem.createAttributes(ModTiers.REINFORCED, 2, -1f))));
 
     public static final Supplier<SmithingTemplateItem> MOLTEN_UPGRADE_TEMPLATE = ITEMS.register(
             "molten_upgrade_template", () -> new SmithingTemplateItem(MOLTEN_UPGRADE_APPLIES_TO_TEXT, MOLTEN_UPGRADE_INGREDIENTS_TEXT, MOLTEN_UPGRADE_TEXT, MOLTEN_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT, MOLTEN_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT, getMoltenUpgradeEmptyBaseSlotTextures(), getMoltenUpgradeEmptyAdditionsSlotTextures())
